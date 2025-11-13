@@ -100,7 +100,7 @@ const map = new mapboxgl.Map({
 );
 
 async function geojsonFetch() { 
-    let response = await fetch('assets/wa-covid-data-102521.geojson);
+    let response = await fetch('assets/wa-covid-data-102521.geojson');
     let stateData = await response.json();
 
     map.on('load', function loadingData() {
